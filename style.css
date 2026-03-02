@@ -69,11 +69,12 @@ input {
     color: white;
 }
  .progress-container {
-    width: 80%;
+    width: 50%;
     background: #333;
     height: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .progress-bar {
@@ -86,7 +87,7 @@ input {
 .start-screen,
 .quiz-screen,
 .result-screen {
-    width: 100%;
+    width: 50%;
     max-width: 1000px;
     text-align: center;
 }
