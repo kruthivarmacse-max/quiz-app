@@ -39,7 +39,7 @@ input {
 }
 .card
 {
-    background:linear-gradient(135deg, #667eea, #916496);;
+    background:white;
     padding: 200px;
     margin: 50px auto;
     width:400px;
