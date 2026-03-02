@@ -1,14 +1,20 @@
+html,body{
+    margin: 0;
+   padding: 0;
+    min-height: 100vh;
+    
+}
+
 body{
    font-family: arial,sans-serif;
    background:linear-gradient(135deg,#4e73df,#1cc88a);
     text-align: center;
-   margin: 0;
-   padding: 0;
-   margin: 0;
-   min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
    display: flex;
    justify-content: center;
-   
+   align-items: center;
 }
 .start-screen{
     text-align: center;
