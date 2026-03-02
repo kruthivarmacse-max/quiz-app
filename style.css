@@ -1,0 +1,118 @@
+body{
+   font-family: arial,sans-serif;
+   background:linear-gradient(135deg,#4e73df,#1cc88a);
+    text-align: center;
+   margin: 0;
+   padding: 0;
+   margin: 0;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   
+}
+.start-screen{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#options button {
+    width: 100%;
+    margin: 8px 0;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #d6d1d1;
+}
+.card
+{
+    background:linear-gradient(135deg, #667eea, #916496);;
+    padding: 200px;
+    margin: 50px auto;
+    width:400px;
+    border-radius: 12px;
+    box-shadow: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.853);
+}
+.option-btn
+{
+    display: block;
+    color: darkolivegreen;
+    width: 100%;
+    margin: 50px 0;
+}
+.correct{
+    background: green;
+    color: white;
+}
+.wrong{
+    background: red;
+    color: white;
+}
+ .progress-container {
+    width: 100%;
+    background: #333;
+    height: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 0%;
+    background: #00e5ff;
+    border-radius: 10px;
+    transition: width 0.3s;
+}
+.start-screen,
+.quiz-screen,
+.result-screen {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+#username{
+    width: 250px;
+    padding: 8px;
+    font-size: 14px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+#startBtn{
+    width: 180px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

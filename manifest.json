@@ -1,0 +1,9 @@
+{
+  "name": "Ultimate Web Quiz",
+  "short_name": "Quiz",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#141e30",
+  "theme_color": "#4e73df",
+  "icons": []
+}

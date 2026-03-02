@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title style="color: coral;">Quiz</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+        <div class="start-screen">
+            <br></br><br>
+            <h1 style="color:rgb(228, 9, 53);font-size: 350%;">Ultimate web quiz</h1>
+             
+             <br></br><br></br><br></br>
+            
+            <input type="text" id="username" placeholder="Enter your name" />
+        <button id="startBtn" style="background-color:darkgray; font-display:bold ; font-color:black;" >Start-Quiz</button>
+        
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h2 >Instructions:</h2>
+            <p>You have 1 minute per question.</p>
+            <p>Wrong or timeout reduces score.</p>
+        </div>
+        <div class="quiz-screen hidden">
+           <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+            <div class="card">
+                <h2 id="questionText"></h2>
+                <div id="options"></div>
+                <p id="timer"></p>
+            </div>
+        </div>
+              <div class="result-screen hidden">
+                <h2 style="font-size: large;">Quiz completed</h2>
+                <div id="finalResult"></div>
+                <div id="leaderboard"></div>
+                <button id="clearLeaderboardBtn">Clear Leaderboard</button>
+                <button id="restartBtn">Restart</button>
+              </div>  
+        
+        <script src="script.js"></script>
+    </body>
+</html>
