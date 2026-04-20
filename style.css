@@ -1,80 +1,98 @@
-html,body{
+* {
+    box-sizing: border-box;
     margin: 0;
-   padding: 0;
-    height: 100vh;
-    
+    padding: 0;
 }
 
-body{
-   font-family: arial,sans-serif;
-   background:linear-gradient(135deg,#4e73df,#1cc88a);
-    text-align: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
-.start-screen{
+
+/* COMMON SCREEN STYLE */
+.start-screen,
+.quiz-screen,
+.result-screen {
+    width: 100%;
+    max-width: 500px;
     text-align: center;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
+
+/* TITLE */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
 button {
     width: 100%;
     padding: 12px;
     margin-top: 10px;
-    font-size: 16px;
     border: none;
     border-radius: 8px;
+    font-size: 16px;
+    background: #333;
+    color: white;
     cursor: pointer;
 }
-#options button {
-    width: 100%;
-    margin: 8px 0;
+
+button:hover {
+    background: #555;
 }
-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #d6d1d1;
-}
-.card
-{
-    background:white;
-    padding: 200px;
-    margin: 50px auto;
-    width: 200px;
+
+/* CARD */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
     border-radius: 12px;
-    box-shadow: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.853);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
-.option-btn
-{
+
+/* OPTIONS */
+.option-btn {
     display: block;
-    color: darkolivegreen;
     width: 100%;
-    margin: 50px 0;
+    margin: 10px 0;
 }
-.correct{
-    background: green;
+
+/* COLORS */
+.correct {
+    background: green !important;
     color: white;
 }
-.wrong{
-    background: red;
+
+.wrong {
+    background: red !important;
     color: white;
 }
- .progress-container {
-    width: 50%;
-    background: #333;
+
+/* PROGRESS BAR */
+.progress-container {
+    width: 100%;
+    background: #ddd;
     height: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
-    align-items: center;
+    margin-bottom: 15px;
 }
 
 .progress-bar {
@@ -82,36 +100,18 @@ input {
     width: 0%;
     background: #00e5ff;
     border-radius: 10px;
-    transition: width 0.3s;
 }
-.start-screen,
-.quiz-screen,
-.result-screen {
-    width: 50%;
-    max-width: 1000px;
-    text-align: center;
+
+/* INSTRUCTIONS */
+.instructions {
+    margin-top: 20px;
 }
-#username{
-    width: 250px;
-    padding: 8px;
-    font-size: 14px;
-    margin: 10px 0;
-    border-radius: 6px;
-}
-#startBtn{
-    width: 180px;
-    padding: 8px;
-    font-size: 14px;
-    border-radius: 6px;
-}
+
+/* 📱 MOBILE FIX */
 @media (max-width: 480px) {
 
-    h1 {
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 18px;
+    .title {
+        font-size: 1.8rem;
     }
 
     .card {
@@ -120,6 +120,5 @@ input {
 
     button {
         font-size: 14px;
-        padding: 10px;
     }
 }

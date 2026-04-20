@@ -72,7 +72,7 @@ const quizData = [
     correctIndex:2
   },
 {
-  question:"Which part of computer is called the “brain”?",
+  question:"Which part of computer is called the brain?",
   options:[
     "RAM",
     "Hard Disk",
@@ -232,13 +232,13 @@ function showResult() {
   let percentage = (score / quizData.length) * 100;
 
   if (percentage === 100) {
-    message = "Outstanding! Perfect Score! 🏆🔥";
+    message = "Outstanding! Perfect Score! ";
   } else if (percentage >= 70) {
-    message = "Great Job! Keep Improving! 🚀";
+    message = "Great Job! Keep Improving! ";
   } else if (percentage >= 40) {
-    message = "Good Try! Practice More 👍";
+    message = "Good Try! Practice More ";
   } else {
-    message = "Don't Give Up! Try Again 💪";
+    message = "Don't Give Up! Try Again ";
   }
 
   finalResult.innerHTML = `
@@ -313,7 +313,7 @@ function displayLeaderboard() {
     const leaderboardDiv = document.getElementById("leaderboard");
     let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
 
-    leaderboardDiv.innerHTML = "<h3>🏆 Leaderboard</h3>";
+    leaderboardDiv.innerHTML = "<h3> Leaderboard</h3>";
 
     leaderboard.forEach((player, index) => {
         leaderboardDiv.innerHTML += `
@@ -325,7 +325,7 @@ document.getElementById("clearLeaderboardBtn").addEventListener("click", functio
 
     localStorage.clear();  // clears everything safely for testing
 
-    document.getElementById("leaderboard").innerHTML = "<h3>🏆 Leaderboard</h3><p>Leaderboard Cleared ✅</p>";
+    document.getElementById("leaderboard").innerHTML = "<h3> Leaderboard</h3><p>Leaderboard Cleared ✅</p>";
 
 });
 if ("serviceWorker" in navigator) {
